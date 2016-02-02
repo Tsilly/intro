@@ -1,10 +1,10 @@
 <div class="row lan-code">
-  <div class="col-sm-4 text-box">
+  <div class="col-xs-12 col-sm-4 text-box">
     <h2> <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Tools I Use </h2>
     <p class="lead">I use Ruby on Rails, JavaScript, jQuery for development.<br>And I love testing my app with RSpec & Capybara. You can find me on <%= link_to 'Github', "https://github.com/Tsilly" %>.</p>
   </div>
 
-  <div class="col-sm-8">
+  <div class="col-xs-12 col-sm-8">
     <div class="row">
       <% lang1 = [
           { title: "Backend", description: "Ruby on Rails, Ruby, MySQL"},
@@ -15,7 +15,7 @@
           %>
 
       <% lang1.each do |lang| %>
-        <div class="col-sm-6">
+        <div class="col-xs-6 col-sm-6">
           <h3><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <%= lang[:title] %> </h3>
           <p><%= lang[:description] %></p>
         </div>
@@ -23,7 +23,7 @@
     </div>
     <div class="row">
       <% lang2.each do |lang| %>
-        <div class="col-sm-6">
+        <div class="col-xs-6 col-sm-6">
           <h3><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> <%= lang[:title] %> </h3>
           <p><%= lang[:description] %></p>
         </div>
