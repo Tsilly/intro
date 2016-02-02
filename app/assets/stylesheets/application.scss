@@ -1,0 +1,16 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$screen-lg-min: 1200px;
+$screen-md-max: 1199px;
+$screen-md-min: 992px;
+$screen-sm-max: 991px;
+$screen-sm-min: 768px;
+$screen-xs-max: 767px;
+$border-line: 1px solid #bbb;
+$border-line-pink: 1px solid #FF99CC;
+$pink: #FF99CC;
+
+@import "layouts";
+@import "welcome.scss";
+

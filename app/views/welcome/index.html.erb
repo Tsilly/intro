@@ -1,0 +1,67 @@
+<%= render partial: 'jumbotron' %>
+
+<div class="welcome" id="welcome">
+  <div class="container">
+    <div class="row coding">
+      <div class="col-sm-8">
+
+      </div>
+      <div class="col-sm-4">
+        <h2>I <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> Coding.</h2>
+        <p class="lead">I started to learn coding 2 years ago. At first, I just wanted to build my own travelling website. Then I found that coding is very charming. <br>Now, <em>I'm enjoying it.</em></p>
+      </div>
+    </div>
+    <div class="row lan-code">
+      <div class="col-sm-4">
+        <h2> <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Tools I Use </h2>
+        <p class="lead">I use Ruby on Rails, JavaScript, jQuery for development.<br>And I love testing my app with RSpec & Capybara. You can find me on <%= link_to 'Github', "https://github.com/Tsilly" %>.</p>
+      </div>
+
+      <div class="col-sm-8">
+        <div class="row">
+          <% lang1 = [
+              { title: "Backend", description: "Ruby on Rails, Ruby, MySQL"},
+              { title: "Frontend", description: "JavaScript, CoffeeScript, Ajax, jQuery, Bootstrap, HTML/HAML, CSS/SASS"}];
+             lang2 = [
+              { title: "Test", description: "RSpec, Capybara"},
+              { title: "Others", description: "Git, Github, Bitbucket"}]
+              %>
+
+          <% lang1.each do |lang| %>
+            <div class="col-sm-6">
+              <h3><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <%= lang[:title] %> </h3>
+              <p><%= lang[:description] %></p>
+            </div>
+          <% end %>
+        </div>
+        <div class="row">
+          <% lang2.each do |lang| %>
+            <div class="col-sm-6">
+              <h3><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <%= lang[:title] %> </h3>
+              <p><%= lang[:description] %></p>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="row interests">
+      <div class="row title">
+        <h2>I'm also interesting in...</h2>
+      </div>
+      <div class="row">
+        <% interests = [
+            { title: "travelling", url: "https://images.unsplash.com/photo-1453486140354-a56fcc4bbfd5?crop=entropy&fit=crop&fm=jpg&h=800&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1125", icon: "plane"}, 
+            { title: "Photography", url: "https://images.unsplash.com/46/3YNGIU4yRTO4DDifrEfA__MG_2885.jpg?crop=entropy&fit=crop&fm=jpg&h=775&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1125", icon: "camera"}, 
+            { title: "Cooking", url: "https://images.unsplash.com/photo-1446034730750-a0b64d06ad13?crop=entropy&fit=crop&fm=jpg&h=775&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1125", icon: "heart"}]
+        %>
+        <% interests.each do |interest| %>
+          <div class="col-sm-4">
+            <h3><span class="glyphicon glyphicon-<%= interest[:icon] %>" aria-hidden="true"></span> <%= interest[:title] %></h3>
+            <img src=<%= interest[:url] %> class="img-circle" alt="Responsive image"  height="180" width="180">
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
