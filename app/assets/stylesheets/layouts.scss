@@ -45,9 +45,7 @@
     ul {
       list-style-type: none;
       li {
-        letter-spacing: 0.5px;
-        font-family: $font-family-base;
-        font-weight: $headings-font-weight;
+        color: $gray;
         a {
           color: $gray;
           font-weight: normal;

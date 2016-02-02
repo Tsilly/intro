@@ -1,0 +1,18 @@
+<div class="row interests">
+  <div class="row title">
+    <h2>I'm also interested in...</h2>
+  </div>
+  <div class="row">
+    <% interests = [
+        { title: "travelling", url: "https://images.unsplash.com/photo-1453486140354-a56fcc4bbfd5?crop=entropy&fit=crop&fm=jpg&h=800&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1125", icon: "plane"}, 
+        { title: "Photography", url: "https://images.unsplash.com/46/3YNGIU4yRTO4DDifrEfA__MG_2885.jpg?crop=entropy&fit=crop&fm=jpg&h=775&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1125", icon: "camera"}, 
+        { title: "Cooking", url: "https://images.unsplash.com/photo-1446034730750-a0b64d06ad13?crop=entropy&fit=crop&fm=jpg&h=775&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1125", icon: "heart"}]
+    %>
+    <% interests.each do |interest| %>
+      <div class="col-sm-4 subtitle">
+        <h3><span class="glyphicon glyphicon-<%= interest[:icon] %>" aria-hidden="true"></span> <%= interest[:title] %></h3>
+        <img src=<%= interest[:url] %> class="img-circle" alt="Responsive image"  height="180" width="180">
+      </div>
+    <% end %>
+  </div>
+</div>
