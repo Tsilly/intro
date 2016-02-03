@@ -14,18 +14,19 @@
       letter-spacing: 0.5px;
       font-family: $font-family-base;
       text-transform: uppercase;
+      border-right: $border-line;
       a {
         color: $gray;
         padding: 30px;
-      }
-      a:last-child {
-        border-left: $border-line;
       }
       a:hover{
         // background-color: $gray-lighter;
         background-color: $pink;
         color: white;
       } 
+    }
+    li:last-child{
+      border-left: $border-line;
     }
   }
 }

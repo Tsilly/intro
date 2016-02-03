@@ -1,28 +1,26 @@
 <%= render partial: 'jumbotron' %>
 
-<div class="welcome" id="welcome">
-  <div class="container">
-    <div class="row intro">
-      <div class="col-xs-12 col-sm-3">
-        <img src="http://thedudeminds.de/images/self.jpg" class="img-rounded" alt="Responsive image"  height="200">
-      </div>
-      <div class="col-xs-12 col-sm-6 text-box">
-        <h2><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> Taiwanese</h2>
-        <p class="lead">I come from Taiwan and now live in Leipzig.<br>I can speak fluent Mandarin, English and German. My favorite band is Queen. And I'm a great Halma player.</p>
-      </div> 
+<div class="container welcome" id="welcome">
+  <div class="row intro">
+    <div class="col-xs-4 col-md-3">
+      <img src="http://thedudeminds.de/images/self.jpg" class="img-rounded" alt="Responsive image"  height="200">
     </div>
-
-    <div class="row coding">
-      <div class="col-xs-12 col-sm-5 col-sm-offset-2">
-        <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?crop=entropy&fit=crop&fm=jpg&h=1025&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925" class="img-rounded" alt="Responsive image"  height="200">
-      </div>
-      <div class="col-xs-12 col-sm-5 text-box">
-        <h2>I <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> Coding.</h2>
-        <p class="lead">I started coding 2 years ago. At first, I just wanted to build my own travelling website. Then I found that coding is very charming. <br>Now, <em>I'm enjoying it.</em></p>
-      </div>
-    </div>
-    <%= render partial: 'welcome/lan_code' %>
-
-    <%= render partial: 'welcome/interest' %>
+    <div class="col-xs-12 col-md-6 text-box">
+      <h2><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> Taiwanese</h2>
+      <p class="lead">I come from Taiwan and now live in Leipzig.<br>I can speak fluent Mandarin, English and German. My favorite band is Queen. And I'm a great Halma player.</p>
+    </div> 
   </div>
+
+  <div class="row coding">
+    <div class="col-xs-5 col-md-5 col-md-offset-2">
+      <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?crop=entropy&fit=crop&fm=jpg&h=1025&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925" class="img-rounded" alt="Responsive image" height="200">
+    </div>
+    <div class="col-xs-12 col-md-5 text-box">
+      <h2>I <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> Coding.</h2>
+      <p class="lead">I started coding 2 years ago. At first, I just wanted to build my own travelling website. Then I found that coding is very charming. <br>Now, <em>I'm enjoying it.</em></p>
+    </div>
+  </div>
+  <%= render partial: 'welcome/lan_code' %>
+
+  <%= render partial: 'welcome/interest' %>
 </div>
