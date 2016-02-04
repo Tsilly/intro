@@ -1,33 +1,31 @@
-<div class="row lan-code">
-  <div class="col-xs-12 col-sm-4 text-box">
-    <h2> <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Tools I Use </h2>
-    <p class="lead">I use Ruby on Rails, JavaScript, jQuery for development.<br>And I love testing my app with RSpec & Capybara. You can find me on <%= link_to 'Github', "https://github.com/Tsilly" %>.</p>
+<div class="col-xs-12 col-md-4 text-box">
+  <h2> <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Tools I Use </h2>
+  <p class="lead">I use Ruby on Rails, JavaScript, jQuery for development.<br>And I love testing my app with RSpec & Capybara. You can find me on <%= link_to 'Github', "https://github.com/Tsilly" %>.</p>
+</div>
+
+<div class="col-xs-12 col-md-8">
+  <div class="row">
+    <% lang1 = [
+        { title: "Backend", description: "Ruby on Rails, Ruby, MySQL"},
+        { title: "Frontend", description: "JavaScript, CoffeeScript, Ajax, jQuery, Bootstrap, HTML/HAML, CSS/SASS"}];
+       lang2 = [
+        { title: "Test", description: "RSpec, Capybara"},
+        { title: "Others", description: "Git, Github, Bitbucket"}]
+        %>
+
+    <% lang1.each do |lang| %>
+      <div class="col-xs-12 col-md-6 code-lang-box">
+        <h3><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <%= lang[:title] %> </h3>
+        <p><%= lang[:description] %></p>
+      </div>
+    <% end %>
   </div>
-
-  <div class="col-xs-12 col-sm-8">
-    <div class="row">
-      <% lang1 = [
-          { title: "Backend", description: "Ruby on Rails, Ruby, MySQL"},
-          { title: "Frontend", description: "JavaScript, CoffeeScript, Ajax, jQuery, Bootstrap, HTML/HAML, CSS/SASS"}];
-         lang2 = [
-          { title: "Test", description: "RSpec, Capybara"},
-          { title: "Others", description: "Git, Github, Bitbucket"}]
-          %>
-
-      <% lang1.each do |lang| %>
-        <div class="col-xs-6 col-sm-6">
-          <h3><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <%= lang[:title] %> </h3>
-          <p><%= lang[:description] %></p>
-        </div>
-      <% end %>
-    </div>
-    <div class="row">
-      <% lang2.each do |lang| %>
-        <div class="col-xs-6 col-sm-6">
-          <h3><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <%= lang[:title] %> </h3>
-          <p><%= lang[:description] %></p>
-        </div>
-      <% end %>
-    </div>
+  <div class="row">
+    <% lang2.each do |lang| %>
+      <div class="col-xs-12 col-md-6 code-lang-box">
+        <h3><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <%= lang[:title] %> </h3>
+        <p><%= lang[:description] %></p>
+      </div>
+    <% end %>
   </div>
 </div>

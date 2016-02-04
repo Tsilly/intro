@@ -1,69 +1,19 @@
-.jumbotron {
-  background-image: url('https://images.unsplash.com/photo-1437419764061-2473afe69fc2?crop=entropy&fit=crop&fm=jpg&h=775&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1450');
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
-  width: 100%;
-  @media (min-width: $screen-lg-min) {
-    height: 780px;
-    h1 {
-      margin-top: 300px;
-    }
-  }
-  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-    height: 500px;
-    h1 {
-      margin-top: 250px;
-    }
-  }
-  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    height: 500px;
-    h1 {
-      margin-top: 200px;
-    }
-  }
-  @media (max-width: $screen-xs-max) {
-    height: 380px;
-    h1 {
-      margin-top: 180px;
-    }
-  }
-
-  text-align: center;
-  h1, p {
-    color: $gray-lighter;
-  }
-
-}
+@import "jumbotron.scss";
 
 .welcome{
   @media (min-width: $screen-sm-min) {
-    max-width: 1000px;
+    max-width: 1200px;
   };
-  .intro, .coding, .lan-code, .contact {
-    border-bottom: 1px dotted #bbb;;
-    @media (min-width: $screen-lg-min) {
-      margin-top: 120px;
-      margin-bottom: 120px;
-      height: 400px;
+  .intro, .coding, .lan-code, .interests{
+    border-bottom: 2px dotted #bbb;
+
+    @media (min-width: $screen-sm-min) {
+      padding: 100px;
     }
-    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-      margin-top: 120px;
-      margin-bottom: 120px;
-      height: 400px;
-    };      
-    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-      margin-top: 100px;
-      margin-bottom: 100px;
-      height: 300px;
-    };
     @media (max-width: $screen-xs-max) {
-      margin-top: 80px;
-      margin-bottom: 80px;
-      height: 200px;
-    };
-  }
-  .intro, .coding, .lan-code {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
     .text-box {
       background-color: $gray-lighter;
     }
@@ -74,13 +24,13 @@
     }
   }
   .lan-code {
-    .col-sm-6 {
+    .code-lang-box {
       text-align: center;
       p {
         font-size: 16px;
       }
     }
-    .col-sm-6:hover {
+    .code-lang-box:hover {
       h3 {
         color: $pink;
       }
