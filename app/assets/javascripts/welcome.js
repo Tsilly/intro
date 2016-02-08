@@ -1,17 +1,35 @@
 $(function(){
-  var title = $(".jumbotron div h1");
+  var title    = $(".jumbotron div h1");
   var subtitle = $(".jumbotron div h3");
-  var button = $(".jumbotron div a");
-  $('.jumbotron').hover(function(){
+  var button   = $(".jumbotron div a");
+  var intro    = $(".intro");
+  var coding   = $(".coding");
+  var lanCode    = $(".lan-code");
+  var interests   = $(".interests");
 
-    title.animate({
-      width: '200px',
-      opacity: 0.6
-    }, function(){
-      title.css({"background-color": "#484848", "opacity": "0.8", color: "#F8F8F8"});
-      subtitle.css({"color": "#F8F8F8"});
-    }
+  title.hide();
+  subtitle.hide();
+  button.hide();
+  intro.hide();
+  coding.hide();
+  lanCode.hide();
+  interests.hide();
 
-    );
+  title.fadeIn(500, function(){
+    subtitle.fadeIn(800, function(){
+      button.fadeIn(500);
+    });
+  });
+
+  $(window).scroll(function(){
+    // var height = $(this).scrollTop();
+    var speed  = 1500;
+    intro.fadeIn(speed, function(){
+      coding.fadeIn(speed, function(){
+        lanCode.fadeIn(speed, function(){
+          interests.fadeIn(speed);
+        });
+      });
+    });
   });
 });

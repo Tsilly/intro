@@ -4,6 +4,7 @@
   @media (min-width: $screen-sm-min) {
     max-width: 1200px;
   };
+
   .intro, .coding, .lan-code, .interests{
     border-bottom: 2px dotted #bbb;
 
@@ -15,27 +16,24 @@
       padding-bottom: 100px;
     }
     .text-box {
-      background-color: $gray-lighter;
+      // background-color: $gray-darker;
     }
     .text-box:hover {
-      border: 1px solid #A0A0A0;
       border: $border-line-pink;
       background-color: white;
     }
   }
+
   .lan-code {
     .code-lang-box {
       text-align: center;
-      p {
-        font-size: 16px;
-      }
+      font-size: 16px;
     }
     .code-lang-box:hover {
-      h3 {
-        color: $pink;
-      }
+      h3 { color: $pink; }
     }
   }
+
   .interests {
     margin-bottom: 4%;
     text-align: center;
@@ -49,6 +47,7 @@
       color: $pink;
     }
   }
+
   img {
     opacity: 0.7;
   }
