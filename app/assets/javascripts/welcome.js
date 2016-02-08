@@ -7,7 +7,8 @@ $(function(){
       height: '200px',
       width: '200px'
     }, function(){
-      title.css({"background-color": "#888888", "opacity": "0.8"});
+      title.css({"background-color": "#E0E0E0", "opacity": "0.8"});
+      subtitle.css({"color": "#F5F5F5"});
     });
   });
 });
