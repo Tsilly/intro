@@ -1,4 +1,4 @@
-create_user = User.create
+create_user = User.create! email: 'example@example.com', password: 'password'
 
 create_articles = 
   for i in 1..5 do
